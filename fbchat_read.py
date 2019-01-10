@@ -8,7 +8,7 @@ class ReadBot(Client):
         self.markAsRead(thread_id)
 
         log.info("{} from {} in {}".format(message_object, thread_id, thread_type.name))
-        reply = '✔ seen ' + str(time.localtime().tm_hour) + ":" + str(time.localtime().tm_min)
+        reply = '✓ seen ' + str(time.localtime().tm_hour) + ":" + str(time.localtime().tm_min)
 
         # If you're not the author, echo
         if author_id != self.uid:
