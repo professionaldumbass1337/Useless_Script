@@ -14,5 +14,5 @@ class ReadBot(Client):
         if author_id != self.uid:
             self.send(Message(text = reply), thread_id=thread_id, thread_type=thread_type)
 
-client = ReadBot("feedism", "khongnoigrr")
+client = ReadBot("ID", "PASS")
 client.listen()
